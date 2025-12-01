@@ -37,15 +37,30 @@ body{
 }
 
 .card-front,
-.card-back{
+.card-back {
     width: 100%;
     height: 100%;
-    padding: 20px;
     position: absolute;
     border-radius: 5px;
-    background:white;
     backface-visibility: hidden;
+    overflow: hidden;     
 }
+
+/* 🔹 FRENTE DA CARTA (aparece quando vira) */
+.card-front {
+    background: white;      /* fundo branco */
+    transform: rotateY(180deg);
+}
+
+/* 🔹 VERSO DA CARTA (imagem) */
+.card-back {
+    background-size: cover;        /* ocupa tudo */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* coloque aqui sua imagem */
+    background-image: url('IMAGEM_DO_VERSO.png');
+}
+
 
 .card-front{
     transform: rotateY(180deg);
@@ -108,8 +123,8 @@ body a{
 .restart-btn {
     background: #5a3dfa;
     color: #ffffff;
-    padding: 10px 18px;
-    border-radius: 8px;
+    padding: 12px 20px;
+    border-radius: 12px;
     text-decoration: none;
     font-weight: bold;
     border: none;
@@ -121,10 +136,27 @@ body a{
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 10px;
-    color: #fff;
+    background: #dd0505;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 12px;
     text-shadow: 0 0 10px #0008;
     letter-spacing: 2px;
 }
+
+.times-futebol {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background: #ebe264;
+    color: #000000;
+    padding: 12px 20px;
+    border-radius: 12px;
+    text-shadow: 0 0 10px #0008;
+    letter-spacing: 1px;
+
 
 
 
