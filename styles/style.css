@@ -20,8 +20,8 @@ body{
 }
 
 .card{
-    height: calc(25% - 10px);
-    width: calc(20% - 10px);
+    height: calc(20% - 10px);  
+    width: calc(12.5% - 10px);  
     margin: 5px;
     position: relative;
     box-shadow: 1px 1px 1px rgba(1, 1, 1, .3);
@@ -46,18 +46,15 @@ body{
     overflow: hidden;     
 }
 
-/* 🔹 FRENTE DA CARTA (aparece quando vira) */
 .card-front {
-    background: white;      /* fundo branco */
+    background: white;      
     transform: rotateY(180deg);
 }
 
-/* 🔹 VERSO DA CARTA (imagem) */
 .card-back {
-    background-size: cover;        /* ocupa tudo */
+    background-size: cover;        
     background-position: center;
     background-repeat: no-repeat;
-    /* coloque aqui sua imagem */
     background-image: url('IMAGEM_DO_VERSO.png');
 }
 

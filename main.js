@@ -82,7 +82,7 @@ function shuffle() {
 }
 
 function checkEndGame() {
-    if (score === 10) {  
+    if (score === 20) {  
         clearInterval(timerInterval);
         setTimeout(() => {
             alert(`Parabéns! Você venceu em ${timerDisplay.textContent}`);
